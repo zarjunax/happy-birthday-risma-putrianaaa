@@ -1,0 +1,32 @@
+.pink-pill,
+.outline-pill {
+    border-radius: 999px;
+    padding: 13px 21px;
+    font: 700 9px var(--body);
+    letter-spacing: .1em;
+    cursor: pointer;
+    transition: .3s
+}
+
+.pink-pill {
+    border: 1px solid #f6b2c5;
+    background: #ef91ac;
+    color: white;
+    box-shadow: 0 12px 30px #e984a522
+}
+
+.pink-pill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px #e984a544
+}
+
+.outline-pill {
+    border: 1px solid #e7b5c444;
+    background: #ffffff06;
+    color: #d8b9c4
+}
+
+.outline-pill:hover {
+    background: #ffffff0d;
+    border-color: #efb4c7
+}

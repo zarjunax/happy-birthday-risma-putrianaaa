@@ -1,0 +1,95 @@
+@media(max-width:800px) {
+    .floating-polaroids {
+        display: none
+    }
+
+    .memory-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px
+    }
+
+    .memory-image {
+        height: 115px
+    }
+
+    .content-card {
+        padding: 35px 28px
+    }
+
+    .wish-card {
+        padding: 35px 28px
+    }
+
+    .time-box {
+        width: 66px;
+        height: 65px
+    }
+
+    .time-box strong {
+        font-size: 30px
+    }
+
+    .countdown {
+        gap: 4px
+    }
+
+    .countdown>i {
+        font-size: 18px
+    }
+
+    .display-title {
+        font-size: 70px
+    }
+
+    .site-footer {
+        font-size: 7px
+    }
+}
+
+@media(max-height:650px) {
+    .topbar {
+        height: 55px
+    }
+
+    .view {
+        padding-top: 50px;
+        padding-bottom: 35px
+    }
+
+    .display-title {
+        font-size: 70px;
+        margin: 20px 0 12px
+    }
+
+    .countdown {
+        transform: scale(.82)
+    }
+
+    .gift-box {
+        margin: 20px 0 5px
+    }
+
+    .letter-copy {
+        font-size: 13px
+    }
+
+    .content-card {
+        padding: 25px 35px
+    }
+
+    .wish-card {
+        padding: 25px 45px
+    }
+
+    .wish-card p {
+        font-size: 12px
+    }
+
+    .memory-image {
+        height: 115px
+    }
+
+    .memory-grid {
+        gap: 9px
+    }
+}

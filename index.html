@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Risma Putriana ♡</title>
+  <meta name="description" content="A special birthday experience for Risma Putriana.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components/buttons.css">
+  <link rel="stylesheet" href="css/components/modal.css">
+  <link rel="stylesheet" href="css/components/polaroid.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="preloader-heart">♡</div>
+    <div class="preloader-text">menyiapkan kejutan...</div>
+  </div>
+
+  <canvas id="stars"></canvas>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grain"></div>
+  <div id="petals"></div>
+  <div id="cursor-heart">♡</div>
+
+  <div id="app">
+    <header class="topbar">
+      <div class="brand"></div>
+      <div class="top-actions">
+        <button class="round-btn" id="musicToggle" title="Musik">♪</button>
+        <button class="round-btn" id="soundToggle" title="Suara">◌</button>
+      </div>
+    </header>
+
+    <main class="screen">
+
+      <section class="view active" id="view-home">
+        <div class="center-wrap">
+          <div class="overline">✦ MENGHITUNG HARI ✦</div>
+          <h1 class="display-title">Her Special Day<br><em>is Coming</em></h1>
+          <p class="subtitle">Seseorang yang indah sedang menunggu waktunya <span>♡</span></p>
+
+          <div class="countdown" id="countdown">
+            <div class="time-box"><strong id="days">00</strong><small>HARI</small></div>
+            <i>:</i>
+            <div class="time-box"><strong id="hours">00</strong><small>JAM</small></div>
+            <i>:</i>
+            <div class="time-box"><strong id="minutes">00</strong><small>MENIT</small></div>
+            <i>:</i>
+            <div class="time-box"><strong id="seconds">00</strong><small>DETIK</small></div>
+          </div>
+
+          <p class="tiny-note">⌛ beberapa detik lagi... ♡</p>
+          <button class="outline-pill" data-go="gift">🔒 TUNGGU SAMPAI WAKTUNYA 🔒</button>
+          <div class="pager">Teruskan dari sini</div>
+        </div>
+      </section>
+
+      <!-- GIFT -->
+      <section class="view" id="view-gift">
+        <div class="center-wrap gift-view">
+          <div class="overline">✦ ADA SESUATU UNTUKMU ✦</div>
+          <button class="gift-box" id="giftBox" aria-label="Buka hadiah">
+            <span class="gift-lid"></span>
+            <span class="gift-body"></span>
+            <span class="gift-ribbon-v"></span>
+            <span class="gift-ribbon-h"></span>
+            <span class="gift-bow">∞</span>
+          </button>
+          <p class="gift-hint">sentuh hadiahnya ♡</p>
+          <div class="pager"><button data-go="home">← kembali</button></div>
+        </div>
+      </section>
+
+      <!-- LETTER HOME -->
+      <section class="view" id="view-letter-home">
+        <div class="floating-polaroids left">
+          <div class="polaroid p1">
+            <img src="assets/images/memories/8.jpeg" alt="Memori 1"
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+          </div>
+          <div class="polaroid p2">
+            <img src="assets/images/memories/2.jpeg" alt="Memori 2"
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+          </div>
+        </div>
+        <div class="floating-polaroids right">
+          <div class="polaroid p3">
+            <img src="assets/images/memories/7.jpeg" alt="Memori 3"
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+          </div>
+          <div class="polaroid p4">
+            <img src="assets/images/memories/1.jpeg" alt="Memori 4"
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+          </div>
+        </div>
+        <div class="center-wrap letter-home">
+          <div class="overline">✦ A LOVE LETTER FOR YOU ✦</div>
+          <h1 class="display-title">Your<br><em>Special Day</em></h1>
+          <p class="subtitle">Created with love, just for you</p>
+          <button class="pink-pill" data-go="letter">♡ READ MY LETTER</button>
+          <div class="pager"><button data-go="memories">memories →</button></div>
+        </div>
+      </section>
+
+      <!-- LETTER -->
+      <section class="view" id="view-letter">
+        <div class="content-card letter-card">
+          <div class="card-title">Happy Birthday</div>
+          <div class="letter-copy" id="letterCopy">
+            <p>Selamat ulang tahun sayaanggg.....♡♡♡</p>
+            <p>Abang selalu bersyukur bisa kenal dan punya dedee sampai sekarang. Hari-hari abang jadi jauh lebih baik
+              dan penuh senyum sejak ada dedee, dan itu hal yang paling abang syukuri.</p>
+            <p>Di umur yang baru ini, doa abang semua hal baik selalu ngikutin langkah dedee. Dede sehat
+              terus, panjang umur, dipermudah segala urusannya, dan semua impian yang lagi dedee kejar bisa tercapai
+              satu per satu. Abang bakal selalu nemenin dan dukung dedee di setiap prosesnya.</p>
+            <p>Tetap jadi perempuan yang kuat, sabar, dan hebat seperti sekarang yaa sayang. Kalau nanti ada hari yang
+              berat,
+              jangan lupa kalau dedee nggak pernah sendirian. Jarak Bekasi ke Pangandaran engga akan pernah jadi
+              halangan buat
+              abang untuk selalu usahain hadir dan nemenin dede dalam keadaan apa pun. </p>
+            <p>Sekali lagi, selamat ulang tahun kesayangannya abang. Hari ini jadi awal dari banyak hari indah yang akan
+              kita lewati bareng ke depannya. ♡♡♡</p>
+          </div>
+          <div class="card-sign">with all my love,<br><em>someone who chooses you ♡</em></div>
+          <button class="corner-next" data-go="memories">next →</button>
+        </div>
+      </section>
+
+      <!-- MEMORIES -->
+      <section class="view" id="view-memories">
+        <div class="memory-wrap">
+          <div class="overline">✦ GADIS KESAYANGAN ABANG ✦</div>
+          <h1 class="section-title">Beautiful <em>Girl</em></h1>
+          <div class="memory-grid" id="memoryGrid"></div>
+          <div class="pager"><button data-go="wishes">birthday wishes →</button></div>
+        </div>
+      </section>
+
+      <!-- WISHES -->
+      <section class="view" id="view-wishes">
+        <div class="wish-card">
+          <div class="overline">✦ A WISH FOR YOU ✦</div>
+          <h1>Birthday Wishes</h1>
+          <div class="wish-for">Happy Birthday, my love <span>♥</span></div>
+          <p>Abang ngadoakeun dedee sing salawasna bagja, sehat teras, sukses, sareng kenging barokah anu teu aya
+            watesna
+            dina lambaran anyar kahirupan dedee ieu. Mugi sadayana impian dedee tiasa laksana, dinten-dintenna pinuh ku
+            kabungah, oge manah dedee sing salawasna tengtrem. Hatur nuhun nyak seng, parantos janten bagian anu
+            pangendahna
+            dina kahirupan abang. Abang miharep taun ieu tiasa ngabantun sadaya hal anu salami ieu ku dedee dipikaharep.
+          </p>
+          <div class="wish-heart">♡</div>
+          <button class="pink-pill" id="finalBtn">♡ ONE LAST THING ♡</button>
+        </div>
+      </section>
+
+      <!-- FINAL -->
+      <section class="view" id="view-final">
+        <div class="final-wrap">
+          <div class="overline">✦ JUST FOR RISMA ✦</div>
+          <div class="final-heart">♥</div>
+          <h1 class="final-title">Risma Putriana</h1>
+          <p class="final-copy">Semoga setiap langkahmu dipertemukan dengan hal-hal baik, dan semoga senyummu selalu
+            punya alasan untuk tinggal.</p>
+          <div class="final-love">I love you, always. ♡</div>
+          <button class="outline-pill" data-go="home">↻ PLAY AGAIN</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span></span><span>made with love · <span id="year"></span></span>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <input id="photoUpload" type="file" accept="image/*" hidden>
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/audio/backsound.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="popSound" src="assets/audio/sound-effect.mp3" preload="auto"></audio>
+
+  <script src="data/memories.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/modules/navigation.js"></script>
+  <script src="js/modules/countdown.js"></script>
+  <script src="js/modules/effects.js"></script>
+  <script src="js/modules/music.js"></script>
+  <script src="js/modules/memories.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

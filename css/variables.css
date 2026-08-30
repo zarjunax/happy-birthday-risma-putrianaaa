@@ -1,0 +1,16 @@
+:root {
+  --bg: #160f1c;
+  --bg2: #251528;
+  --panel: #241925cc;
+  --panel2: #311e2f;
+  --pink: #f2a5ba;
+  --pink-bright: #ffb5c8;
+  --rose: #c86d8c;
+  --white: #fff8fa;
+  --text: #fff5f8;
+  --muted: #d2b8c2;
+  --line: #9c718444;
+  --shadow: 0 30px 100px #00000055;
+  --display: "Cormorant Garamond", serif;
+  --body: "DM Sans", sans-serif;
+}

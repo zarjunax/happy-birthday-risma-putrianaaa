@@ -1,0 +1,13 @@
+.polaroid img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover
+}
+
+.memory-item:nth-child(2n) {
+    --rot: 3deg
+}
+
+.memory-item:nth-child(3n) {
+    --rot: -3deg
+}
