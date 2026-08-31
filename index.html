@@ -18,6 +18,49 @@
   <link rel="stylesheet" href="css/components/polaroid.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .view {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+      height: 100dvh !important;
+      box-sizing: border-box;
+    }
+
+    .content-card,
+    .memory-wrap {
+      max-height: 85dvh !important;
+      position: relative !important;
+      display: flex !important;
+      flex-direction: column !important;
+      width: 90% !important;
+      max-width: 500px !important;
+    }
+
+    .letter-copy {
+      flex: 1 !important;
+      overflow-y: auto !important;
+      margin-bottom: 60px !important;
+      padding-right: 10px;
+    }
+
+    .letter-copy::-webkit-scrollbar {
+      display: none;
+    }
+
+    .letter-copy {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .corner-next {
+      position: absolute !important;
+      bottom: 20px !important;
+      right: 20px !important;
+      z-index: 10 !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -174,7 +217,7 @@
           <div class="overline">✦ A WISH FOR YOU ✦</div>
           <h1>Birthday Wishes</h1>
           <div class="wish-for">Happy Birthday, my love <span>♥</span></div>
-          <p>Abang mendoakan Dedee agar selalu bahagia, sehat terus, sukses, dan mendapat berkah yang tak terhingga di 
+          <p>Abang mendoakan Dedee agar selalu bahagia, sehat terus, sukses, dan mendapat berkah yang tak terhingga di
             lembaran baru kehidupan Dedee ini. semua impian Dedee bisa terwujud, hari-harinya penuh dengan kebahagiaan,
             dan hati Dedee selalu tenteram. Terima kasih ya sayang, sudah menjadi bagian yang paling indah dalam hidup
             Abang. Abang berharap tahun ini bisa membawa semua hal yang selama ini Dedee harapkan.</p>
