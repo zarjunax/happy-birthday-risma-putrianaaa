@@ -117,7 +117,17 @@
       <section class="view" id="view-letter">
         <div class="content-card letter-card">
           <div class="card-title">Happy Birthday</div>
-          <div class="letter-copy" id="letterCopy">
+          <style>
+            #letterCopy::-webkit-scrollbar {
+              display: none;
+            }
+
+            #letterCopy {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+            }
+          </style>
+          <div class="letter-copy" id="letterCopy" style="overflow-y: auto; max-height: 60vh; padding-bottom: 20px;">
             <p>Selamat ulang tahun sayaanggg.....♡♡♡</p>
             <p>Abang selalu bersyukur bisa kenal dan punya dedee sampai sekarang. Hari-hari abang jadi jauh lebih baik
               dan penuh senyum sejak ada dedee, dan itu hal yang paling abang syukuri.</p>
@@ -142,7 +152,18 @@
         <div class="memory-wrap">
           <div class="overline">✦ GADIS KESAYANGAN ABANG ✦</div>
           <h1 class="section-title">Beautiful <em>Girl</em></h1>
-          <div class="memory-grid" id="memoryGrid"></div>
+          <style>
+            #memoryGrid::-webkit-scrollbar {
+              display: none;
+            }
+
+            #memoryGrid {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+            }
+          </style>
+          <div class="memory-grid" id="memoryGrid" style="overflow-y: auto; max-height: 55vh; padding-bottom: 20px;">
+          </div>
           <div class="pager"><button data-go="wishes">birthday wishes →</button></div>
         </div>
       </section>
@@ -153,13 +174,10 @@
           <div class="overline">✦ A WISH FOR YOU ✦</div>
           <h1>Birthday Wishes</h1>
           <div class="wish-for">Happy Birthday, my love <span>♥</span></div>
-          <p>Abang ngadoakeun dedee sing salawasna bagja, sehat teras, sukses, sareng kenging barokah anu teu aya
-            watesna
-            dina lambaran anyar kahirupan dedee ieu. Mugi sadayana impian dedee tiasa laksana, dinten-dintenna pinuh ku
-            kabungah, oge manah dedee sing salawasna tengtrem. Hatur nuhun nyak seng, parantos janten bagian anu
-            pangendahna
-            dina kahirupan abang. Abang miharep taun ieu tiasa ngabantun sadaya hal anu salami ieu ku dedee dipikaharep.
-          </p>
+          <p>Abang mendoakan Dedee agar selalu bahagia, sehat terus, sukses, dan mendapat berkah yang tak terhingga di 
+            lembaran baru kehidupan Dedee ini. semua impian Dedee bisa terwujud, hari-harinya penuh dengan kebahagiaan,
+            dan hati Dedee selalu tenteram. Terima kasih ya sayang, sudah menjadi bagian yang paling indah dalam hidup
+            Abang. Abang berharap tahun ini bisa membawa semua hal yang selama ini Dedee harapkan.</p>
           <div class="wish-heart">♡</div>
           <button class="pink-pill" id="finalBtn">♡ ONE LAST THING ♡</button>
         </div>
